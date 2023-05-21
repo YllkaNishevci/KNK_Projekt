@@ -1,0 +1,6 @@
+.bodybg{
+    -fx-background-image: url("Fotot/background.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+
+}
