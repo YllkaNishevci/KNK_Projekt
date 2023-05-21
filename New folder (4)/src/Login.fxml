@@ -1,1 +1,89 @@
 
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane prefHeight="400.0" prefWidth="590.0" style="-fx-background-color: #83b3fb;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.LoginController">
+   <children>
+      <BorderPane prefHeight="401.0" prefWidth="294.0">
+         <left>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="brandingImageView" fitHeight="200.0" fitWidth="200.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Fotot/up.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust />
+                     </effect>
+                  </ImageView>
+                  <ChoiceBox fx:id="langChoiceBox" layoutX="25.0" layoutY="327.0" prefWidth="150.0" style="-fx-background-color: #dceafa;" />
+                  <Label fx:id="langLabel" layoutX="38.0" layoutY="308.0" prefHeight="18.0" prefWidth="123.0" text="Zgjedhni gjuhen" />
+               </children>
+            </AnchorPane>
+         </left>
+         <right>
+            <AnchorPane prefHeight="401.0" prefWidth="387.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="lockImageView" fitHeight="95.0" fitWidth="112.0" layoutX="146.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Fotot/l2.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="usernameLabel" layoutX="14.0" layoutY="139.0" text="Emri i perdoruesit">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameTextField" layoutX="142.0" layoutY="136.0" prefHeight="26.0" prefWidth="205.0" promptText="emri i perdoruesit" style="-fx-background-color: #dceafa;" />
+                  <Label fx:id="passwordLabel" layoutX="27.0" layoutY="192.0" text="Password">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="enterPasswordField" layoutX="145.0" layoutY="189.0" prefHeight="26.0" prefWidth="205.0" promptText="password" style="-fx-background-color: #dceafa;" />
+                  <Button fx:id="loginButton" layoutX="25.0" layoutY="259.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="30.0" prefWidth="325.0" style="-fx-background-color: #83b3fb;" text="Kyçu" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cancelButton" layoutX="25.0" layoutY="342.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="26.0" prefWidth="325.0" style="-fx-background-color: #83b3fb;" text="Anulo" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="loginMessageLabel" alignment="CENTER" layoutX="27.0" layoutY="232.0" prefHeight="19.0" prefWidth="324.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="RegisterButton" layoutX="26.0" layoutY="301.0" mnemonicParsing="false" onAction="#RegisterButtonOnAction" prefHeight="26.0" prefWidth="326.0" style="-fx-background-color: #83b3fb;" text="Regjistrohu" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
